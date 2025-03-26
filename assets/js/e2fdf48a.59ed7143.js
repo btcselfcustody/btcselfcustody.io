@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbtcselfcustody=self.webpackChunkbtcselfcustody||[]).push([[8139],{391:e=>{e.exports=JSON.parse('{"tag":{"label":"open source","permalink":"/docs/tags/open-source","allTagsPath":"/docs/tags","count":1,"items":[{"id":"libreboot/README","title":"Libreboot","description":"Why Libreboot?","permalink":"/docs/libreboot/"}],"unlisted":false}}')}}]);
