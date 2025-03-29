@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbtcselfcustody=self.webpackChunkbtcselfcustody||[]).push([[5667],{3614:s=>{s.exports=JSON.parse('{"tag":{"label":"rom","permalink":"/docs/tags/rom","allTagsPath":"/docs/tags","count":1,"items":[{"id":"libreboot/roms","title":"Build Roms","description":"Generate the roms list","permalink":"/docs/libreboot/build-roms/"}],"unlisted":false}}')}}]);
