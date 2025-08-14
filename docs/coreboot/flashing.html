@@ -12,8 +12,8 @@
 
 
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="5649cb57-bc60-498c-a7ff-2d044fc85912"></script><link rel="stylesheet" href="/assets/css/styles.8912fba2.css">
-<script src="/assets/js/runtime~main.8bac88fe.js" defer="defer"></script>
-<script src="/assets/js/main.63af1649.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.01640c4b.js" defer="defer"></script>
+<script src="/assets/js/main.04bfa029.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -33,7 +33,7 @@ This is your recovery point if you need to restore the original firmware.</p>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>This does not back up the entire firmware, only the BIOS region. The Intel Management Engine and descriptor regions are excluded, so this is not a full recovery image.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="flash-the-coreboot-bios">Flash the Coreboot BIOS<a href="#flash-the-coreboot-bios" class="hash-link" aria-label="Direct link to Flash the Coreboot BIOS" title="Direct link to Flash the Coreboot BIOS">​</a></h3>
 <p>Once everything looks correct, flash the prepared Coreboot BIOS region:</p>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">sudo flashrom -p internal -w coreboot.rom --ifd -i bios</span><br></span></code></pre></div></div>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">sudo flashrom -p internal -w coreboot.rom --ifd -i bios -N</span><br></span></code></pre></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="verify-the-flashed-image">Verify the Flashed Image<a href="#verify-the-flashed-image" class="hash-link" aria-label="Direct link to Verify the Flashed Image" title="Direct link to Verify the Flashed Image">​</a></h3>
 <p>After flashing, always re-read the chip and compare it against the file you wrote.
 This ensures the flash was successful and the chip contains exactly what you intended.</p>
