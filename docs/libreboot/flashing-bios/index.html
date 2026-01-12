@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
-<title data-rh="true">Flashing | Self Custody Labs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://selfcustodylabs.com/img/selfcustody.png"><meta data-rh="true" name="twitter:image" content="https://selfcustodylabs.com/img/selfcustody.png"><meta data-rh="true" property="og:url" content="https://selfcustodylabs.com/docs/libreboot/flashing-bios/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Flashing | Self Custody Labs"><meta data-rh="true" name="description" content="Practical guide: Flashing. Covers Locate the chips, Splitting the Rom, Detect the Chips."><meta data-rh="true" property="og:description" content="Practical guide: Flashing. Covers Locate the chips, Splitting the Rom, Detect the Chips."><meta data-rh="true" name="keywords" content="bitcoin,self custody,security,privacy,libreboot,flashing"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://selfcustodylabs.com/docs/libreboot/flashing-bios/"><link data-rh="true" rel="alternate" href="https://selfcustodylabs.com/docs/libreboot/flashing-bios/" hreflang="en"><link data-rh="true" rel="alternate" href="https://selfcustodylabs.com/docs/libreboot/flashing-bios/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Flashing","item":"https://selfcustodylabs.com/docs/libreboot/flashing-bios"}]}</script><link rel="preconnect" href="https://www.google-analytics.com">
+<title data-rh="true">Flashing | Self Custody Labs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://selfcustodylabs.com/img/logo.svg"><meta data-rh="true" name="twitter:image" content="https://selfcustodylabs.com/img/logo.svg"><meta data-rh="true" property="og:url" content="https://selfcustodylabs.com/docs/libreboot/flashing-bios/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Flashing | Self Custody Labs"><meta data-rh="true" name="description" content="Practical guide: Flashing. Covers Locate the chips, Splitting the Rom, Detect the Chips."><meta data-rh="true" property="og:description" content="Practical guide: Flashing. Covers Locate the chips, Splitting the Rom, Detect the Chips."><meta data-rh="true" name="keywords" content="bitcoin,self custody,security,privacy,libreboot,flashing"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://selfcustodylabs.com/docs/libreboot/flashing-bios/"><link data-rh="true" rel="alternate" href="https://selfcustodylabs.com/docs/libreboot/flashing-bios/" hreflang="en"><link data-rh="true" rel="alternate" href="https://selfcustodylabs.com/docs/libreboot/flashing-bios/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Flashing","item":"https://selfcustodylabs.com/docs/libreboot/flashing-bios"}]}</script><link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DB4LHSKK4J"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-DB4LHSKK4J",{anonymize_ip:!0})</script>
@@ -19,17 +19,17 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Self Custody Labs">
 <meta property="og:description" content="Bitcoin self-custody guides and tutorials from Self Custody Labs.">
-<meta property="og:image" content="https://selfcustodylabs.com/img/selfcustody.png">
+<meta property="og:image" content="https://selfcustodylabs.com/img/logo.svg">
 <meta property="og:url" content="https://selfcustodylabs.com">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Self Custody Labs">
 <meta name="twitter:description" content="Bitcoin self-custody guides and tutorials from Self Custody Labs.">
-<meta name="twitter:image" content="https://selfcustodylabs.com/img/selfcustody.png">
+<meta name="twitter:image" content="https://selfcustodylabs.com/img/logo.svg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Self Custody Labs","url":"https://selfcustodylabs.com","potentialAction":{"@type":"SearchAction","target":"https://selfcustodylabs.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Self Custody Labs","url":"https://selfcustodylabs.com","logo":"https://selfcustodylabs.com/img/logo.svg"}</script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="5649cb57-bc60-498c-a7ff-2d044fc85912"></script><link rel="stylesheet" href="/assets/css/styles.ad01504a.css">
-<script src="/assets/js/runtime~main.8b796534.js" defer="defer"></script>
-<script src="/assets/js/main.2682e440.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.13cca473.js" defer="defer"></script>
+<script src="/assets/js/main.61c69604.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -44,7 +44,7 @@
 <li class="">T440p – The BIOS chips can be accessed from the back of the laptop.</li>
 <li class="">T420 / T430 / T530 / W530 – Full disassembly of the laptop is required to access the BIOS chips.</li>
 </ul>
-<p><img decoding="async" loading="lazy" alt="Dual Chip" src="/assets/images/dual_chip-bd7d3f3335762bbbb36e9a36f5925f0f.jpg" width="1280" height="960" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Dual Chip" src="/assets/images/dual-chip-04b057e340de8a275e85d73219795733.webp" width="1280" height="960" class="img_ev3q"></p>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>T480/T480s</div><div class="admonitionContent_BuS1"><p>If you&#x27;re flashing this model, you <strong>DO NOT</strong> need to split the ROM, as it has only one chip. It&#x27;s easily accessible by simply removing the back cover of the laptop. You’ll only need to flash that single chip.</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="splitting-the-rom">Splitting the Rom<a href="#splitting-the-rom" class="hash-link" aria-label="Direct link to Splitting the Rom" title="Direct link to Splitting the Rom" translate="no">​</a></h2>
 <p>For the , you&#x27;ll need to divide your ROM into two distinct portions prior to flashing. This can be accomplished using the dd command.</p>
@@ -56,7 +56,7 @@
 <li class="">Clip the Pomona onto the top BIOS chip firmly</li>
 <li class="">Plug the Raspberry Pico into the laptop using a USB cable</li>
 </ul>
-<p><img decoding="async" loading="lazy" alt="Plug" src="/assets/images/plug-df4250446be0c584803dddc6f9f556fe.jpg" width="1280" height="960" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Plug" src="/assets/images/plug-316885732be6b26a797338114e71322a.webp" width="1280" height="960" class="img_ev3q"></p>
 <p>Execute the following command to detect the chip</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">sudo flashprog -p serprog:dev=/dev/ttyACM0,spispeed=16M</span><br></span></code></pre></div></div>
 <p>If multiple chips are detected, verify whether the one you previously photographed or one closely resembling it is present. Subsequently, re-run the command, making sure to specify the name of the pertinent chip.</p>
