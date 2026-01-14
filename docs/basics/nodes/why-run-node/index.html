@@ -28,8 +28,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Self Custody Labs","url":"https://selfcustodylabs.com","potentialAction":{"@type":"SearchAction","target":"https://selfcustodylabs.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Self Custody Labs","url":"https://selfcustodylabs.com","logo":"https://selfcustodylabs.com/img/logo.svg"}</script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="5649cb57-bc60-498c-a7ff-2d044fc85912"></script><link rel="stylesheet" href="/assets/css/styles.a0b2928f.css">
-<script src="/assets/js/runtime~main.21af10c0.js" defer="defer"></script>
-<script src="/assets/js/main.981576ee.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.740d9388.js" defer="defer"></script>
+<script src="/assets/js/main.ad738e58.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -41,7 +41,7 @@
 <p>When your wallet checks your balance, it asks a Bitcoin node for information. If you don&#x27;t run your own node, you&#x27;re asking someone else&#x27;s.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-gets-exposed">What Gets Exposed<a href="#what-gets-exposed" class="hash-link" aria-label="Direct link to What Gets Exposed" title="Direct link to What Gets Exposed" translate="no">​</a></h3>
 <p>Every time your wallet connects to a third-party node:</p>
-<table><thead><tr><th>Information Revealed</th><th>Risk</th></tr></thead><tbody><tr><td>All your addresses</td><td>Node knows your complete wallet structure</td></tr><tr><td>Your balances</td><td>Node knows how much bitcoin you have</td></tr><tr><td>Your transaction history</td><td>Node can build your financial profile</td></tr><tr><td>Your IP address</td><td>Node can link addresses to your location</td></tr><tr><td>When you&#x27;re online</td><td>Node knows your activity patterns</td></tr><tr><td>Future addresses</td><td>Wallets often query unused addresses too</td></tr></tbody></table>
+<div class="fixed-width-table"><table><thead><tr><th>Information Revealed</th><th>Risk</th></tr></thead><tbody><tr><td>All your addresses</td><td>Node knows your complete wallet structure</td></tr><tr><td>Your balances</td><td>Node knows how much bitcoin you have</td></tr><tr><td>Your transaction history</td><td>Node can build your financial profile</td></tr><tr><td>Your IP address</td><td>Node can link addresses to your location</td></tr><tr><td>When you&#x27;re online</td><td>Node knows your activity patterns</td></tr><tr><td>Future addresses</td><td>Wallets often query unused addresses too</td></tr></tbody></table></div>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="who-might-be-watching">Who Might Be Watching<a href="#who-might-be-watching" class="hash-link" aria-label="Direct link to Who Might Be Watching" title="Direct link to Who Might Be Watching" translate="no">​</a></h3>
 <p>Random public nodes could be run by:</p>
 <ul>
@@ -90,7 +90,7 @@
 <ul>
 <li class="">✅ You control your keys (hardware wallet)</li>
 <li class="">✅ You verify your transactions (your own node)</li>
-<li class="">✅ You don&#x27;t depend on third parties</li>
+<li class="">  ✅ You don&#x27;t depend on third parties</li>
 </ul>
 <p>Without your own node, you&#x27;re only 2/3 of the way there.</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">COMPLETE SELF-CUSTODY:</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">────────────────────────────────────────────────────</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">Your Hardware Wallet    Your Node    Your Internet</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">(signs transactions)    (verifies)   (broadcasts)</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">         │                  │              │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">         └──────────────────┴──────────────┘</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">                        │</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">              Full control, no third parties</span><br></span></code></pre></div></div>
